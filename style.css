@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6ECF0; /* Cor de fundo mais suave */
+    color: #14171A; /* Cor de texto escura */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1DA1F2; /* Cor do cabeçalho semelhante ao Twitter */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Main */
+main {
+    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.posts {
+    width: 70%;
+}
+
+.posts article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E1E8ED; /* Bordas suaves, como no Twitter */
+}
+
+.posts article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.posts article p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.posts article a {
+    font-size: 1.1rem;
+    color: #1DA1F2; /* Cor do link semelhante ao Twitter */
+    text-decoration: none;
+}
+
+.posts article a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E1E8ED;
+}
+
+.sidebar h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    font-size: 1rem;
+}
+
+/* Comentário */
+.comment-form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: none; /* Comentário oculto inicialmente */
+}
+
+.comment-form-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.comment-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #E1E8ED;
+    font-size: 1rem;
+}
+
+.comment-form-container button {
+    background-color: #1DA1F2;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.comment-form-container button:hover {
+    background-color: #1991C1;
+}
+
+/* Footer */
+footer {
+    background-color: #1DA1F2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .posts {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}

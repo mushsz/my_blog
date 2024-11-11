@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="posts" id="posts">
+                <!-- Posts serão carregados dinamicamente -->
+            </section>
+            <aside class="sidebar">
+                <h3>Sobre o Autor</h3>
+                <p>Me chamo Matheus Krigger Brum, gosto de estudar e estou à procura de um trabalho como desenvolvedor web.</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matheus Krigger. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Formulário de comentário -->
+    <div class="comment-form-container" id="comment-form-container">
+        <h3>Deixe seu comentário</h3>
+        <textarea id="comment-text" placeholder="Digite seu comentário..." rows="4"></textarea><br>
+        <button onclick="addComment()">Enviar Comentário</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
